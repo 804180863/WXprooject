@@ -1,0 +1,7 @@
+<view class='indexContainer'>
+<image src='/images/index/cart.jpg' class='Img'></image>
+<text class='user'>{{msg}}</text>
+<view class='Study' catchtap='handleParent'>
+<text>开启前端之旅</text>
+</view>
+</view>

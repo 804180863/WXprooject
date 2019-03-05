@@ -1,0 +1,23 @@
+<!--pages/list/list.wxml-->
+<import src="/pages/listTemp/listTemp.wxml"/>
+<view>
+<swiper indicator-dots circular class='listContainer'>
+<swiper-item>
+<image src='/images/detail/carousel/01.jpg'></image>
+</swiper-item>
+<swiper-item>
+<image src='/images/detail/carousel/02.jpg'></image>
+</swiper-item>
+<swiper-item>
+<image src='/images/detail/carousel/03.jpg'></image>
+</swiper-item>
+<swiper-item>
+<image src='/images/detail/carousel/04.jpg'></image>
+</swiper-item>
+</swiper>
+ <block wx:for='{{datas}}' wx:key='{{index}}'>
+    <view catchtap='handleParent' data-index='{{index}}'>
+      <template is='listTemp' data='{{...item}}'/>
+    </view>
+  </block>
+</view>
